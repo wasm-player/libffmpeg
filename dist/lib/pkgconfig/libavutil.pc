@@ -1,0 +1,14 @@
+prefix=/Users/paul/projects/wasm-player/libffmpeg/FFmpeg/../dist
+exec_prefix=${prefix}
+libdir=/Users/paul/projects/wasm-player/libffmpeg/FFmpeg/../dist/lib
+includedir=/Users/paul/projects/wasm-player/libffmpeg/FFmpeg/../dist/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.51.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}
